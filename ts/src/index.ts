@@ -56,7 +56,9 @@ export function buildLandingContract(
             ...derivedColumns,
           ].sort((a, b) => a.name.localeCompare(b.name)),
           jsonb: Object.fromEntries(
-            Object.entries(jsonb).filter(([name]) => !excludedColumns.includes(name)),
+            Object.entries(jsonb).filter(
+              ([name]) => !excludedColumns.includes(name),
+            ),
           ),
         };
       })
