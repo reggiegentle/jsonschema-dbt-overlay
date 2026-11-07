@@ -1,0 +1,29 @@
+{
+  "name": "drizzle-zod-contract",
+  "version": "0.1.0",
+  "description": "Build deterministic JSON Schema landing contracts from Drizzle PostgreSQL tables and Zod schemas.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "drizzle-orm": "0.45.2",
+    "zod": "4.6.6"
+  },
+  "devDependencies": {
+    "drizzle-orm": "0.45.2",
+    "zod": "4.6.6",
+    "typescript": "^5",
+    "@types/bun": "latest"
+  }
+}
