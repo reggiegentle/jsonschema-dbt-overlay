@@ -31,7 +31,7 @@ test("any and unknown leaves describe all six JSON types", () => {
   const schema = toContractJsonSchema(
     z.object({ any: z.any(), unknown: z.unknown() }),
   );
-  const leaf = {
+  const leaf: z.core.JSONSchema.JSONSchema = {
     type: ["string", "number", "boolean", "null", "object", "array"],
   };
   expect(schema.properties?.any).toEqual(leaf);
