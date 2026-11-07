@@ -7,7 +7,7 @@ path manifest. It does not connect to a database or import an ingestion system.
 ## Packages
 
 - The repository root contains the Python generator.
-- [`ts/`](ts/) contains `drizzle-zod-contract`, which builds the JSON Schema landing
+- [`ts/`](https://github.com/reggiegentle/jsonschema-dbt-overlay/tree/main/ts) contains `drizzle-zod-contract`, which builds the JSON Schema landing
   contract the generator reads from Drizzle tables and Zod schemas.
 
 From the package directory:
